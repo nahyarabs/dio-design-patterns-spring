@@ -1,5 +1,11 @@
 package dio.design.patterns.spring.repository;
 
-public class ClienteRepository {
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import dio.design.patterns.spring.entities.Endereco;
+
+@Repository
+public interface ClienteRepository extends CrudRepository <Endereco, String> {
     
 }
